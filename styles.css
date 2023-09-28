@@ -1,0 +1,79 @@
+#title
+{
+    font-size: 75px;
+    font-weight: bold;
+    color: hsl(92, 42%, 41%);
+    text-align: center;
+    background-color: hwb(221 7% 17%);
+}
+
+html,body
+{
+    height: 100%;
+}
+
+body
+{
+    background: -moz-repeating-linear-gradient(45deg, hwb(345 18% 23%), hwb(318 27% 12%) 10px, hwb(254 31% 18%) 10px, hwb(180 56% 20%) 20px);
+}
+
+container{
+    position:absolute;
+    transform:translate(-50%,-50%);
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    color: hsl(92, 42%, 41%);
+    background-color: hwb(59 8% 9%);
+}
+
+th{
+    background-color: rgb(227, 52, 180);
+    color: hsl(270, 10%, 85%);
+    text-align: center;
+}
+
+td{
+}
+
+th{
+    text-align:center;
+}
+
+thead{
+    th{
+        background-color: hwb(59 8% 9%);
+        color: hsl(270, 10%, 85%);
+        text-align: center;
+    }
+}
+
+tbody{
+    tr{
+        &:hover{
+            background-color: hwb(59 8% 9%);
+            text-align: center;
+        }
+    }
+}
+    td{
+        position: relative;
+        &:hover{
+            &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -9999px;
+                bottom: -9999px;
+                background-color: hwb(59 8% 9%);
+                z-index: -1;
+                text-align: center;
+            }
+        }
+    }
