@@ -2,7 +2,7 @@
 {
     font-size: 75px;
     font-weight: bold;
-    color: hsl(92, 42%, 41%);
+    color: hsl(245, 100%, 93%);
     text-align: center;
     background-color: hwb(221 7% 17%);
 }
@@ -28,13 +28,13 @@ table{
     font-size: 20px;
     font-weight: bold;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    color: hsl(92, 42%, 41%);
-    background-color: hwb(59 8% 9%);
+    color: rgb(238, 215, 232);
+    background-color: hwb(270 15% 11%);
 }
 
 th{
-    background-color: rgb(227, 52, 180);
-    color: hsl(270, 10%, 85%);
+    background-color: rgb(238, 215, 232);
+    color: hwb(270 15% 11%);
     text-align: center;
 }
 
@@ -71,9 +71,8 @@ tbody{
                 right: 0;
                 top: -9999px;
                 bottom: -9999px;
-                background-color: hwb(59 8% 9%);
+                background-color: #eeedaa;
                 z-index: -1;
-                text-align: center;
             }
         }
     }
