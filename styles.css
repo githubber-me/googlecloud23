@@ -51,7 +51,7 @@ html,body {
 }
 
 body {
-    background: -moz-repeating-linear-gradient(45deg, #166D8C, #1D9FA1 10px, #41C0C4 10px, #5ED1D8 20px);
+    background color: #ffffff;
     padding-bottom: 100px;
     margin-bottom: 100px;
 }
