@@ -11,8 +11,14 @@ fetch("vercel.json")
         if(vercel.gc == 1){
             q = "Completed";
         }
-        else{
+        else if(vercel.gc == 0){
             q = "Not Completed";
+        }
+        else if(vercel.gc == 2){
+            q = " ";
+        }
+        else{
+            q=" ";
         }
         out += `
         <tr>
@@ -30,26 +36,32 @@ fetch("vercel.json")
 
     }
     placeholder.innerHTML = out;
-    function filterTable() {
-        let input = document.getElementById("search-input").value.toLowerCase();
+    function filterTable(input) {
         let rows = document.querySelectorAll("#data-output tr");
-
+      
         rows.forEach(function(row) {
-            let name = row.querySelector("td:first-child").textContent.toLowerCase();
-
-            if (name.includes(input)) {
-                row.style.display = "";
-            } else {
-                row.style.display = "none";
-            }
+          let name = row.querySelector("td:first-child").textContent.toLowerCase();
+      
+          if (name.includes(input)) {
+            row.style.display = "";
+          } else {
+            row.style.display = "none";
+          }
         });
-    }
-
-    function clearSearch() {
+      }
+      
+      function clearSearch() {
         document.getElementById("search-input").value = "";
-        filterTable();
-    }
-
-    document.getElementById("search-button").addEventListener("click", filterTable);
-    document.getElementById("clear-button").addEventListener("click", clearSearch);
+        filterTable("");
+      }
+      
+      document.getElementById("search-input").addEventListener("input", function() {
+        let input = this.value.toLowerCase();
+        filterTable(input);
+      });
+      
+      document.getElementById("search-button").addEventListener("click", filterTable);
+      document.getElementById("clear-button").addEventListener("click", clearSearch);
+    
+           
 });

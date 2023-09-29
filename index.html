@@ -2,34 +2,48 @@
 <html lang="en">
     <div class="container">
         <link rel="stylesheet" href="styles.css">
-    <h1 id="title">GCCF Completions (BIT,Bengaluru)</h1>  
-   <body>
-    <div id="search-container">
-        <input type="text" id="search-input" placeholder="Search by name">
-        <button id="search-button">Search</button>
-        <button id="clear-button">Clear</button>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap">
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <div id="headbox">
+            <div id="headbox1">
+                <h1 id="title" class="title-font" data-text="GCCF Completions of BIT, Bengaluru">GCCF Completions of BIT, Bengaluru</h1>
+            </div>
+            <div id="headbox2">
+                <h1 id="title5" class="title5-font" data-text="Updated on 28.9.23">(Updated on 28.9.23)</h1>
+            </div>
+        </div>
+        <body>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Search by name">
+                <button id="search-button">Search</button>
+                <button id="clear-button">Clear</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Enrolled at</th>
+                        <th>Public Profile URL</th>
+                        <th>Courses Completed</th>
+                        <th>Skill Badges Completed</th>
+                        <th>Gen AI Level 3</th>
+                        <th>Total Completions</th>
+                        <th>Redemption Status</th>
+                    </tr>
+                </thead>
+                <tbody id="data-output"></tbody>
+            </table>
+            <script src="./tabledata.js"></script>
+        </body>
     </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Enrolled at</th>
-                    <th>Public Profile URL</th>
-                    <th>Courses Completed</th>
-                    <th>Skill Badges Completed</th>
-                    <th>Gen AI Level 3</th>
-                    <th>Total Completions</th>
-                    <th>Redemption Status</th>
-                </tr>
-            </thead>
-            <tbody id="data-output">
-               
-            </tbody>
-        </table>
-        <script src="./tabledata.js"></script>
-        
-
-    </body>
-</div>
+    <div class="footer">
+        <a href="https://github.com/githubber-me">Built by <strong>Anthahkarana</strong></a>
+    </div>
+      
 </html>
