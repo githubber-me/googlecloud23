@@ -11,7 +11,7 @@ fetch("vercel.json")
             <td>${vercel.sn}</td>
             <td>${vercel.se}</td>
             <td>${vercel.edt}</td>
-            <td>${vercel.url}</td>
+            <td><a href="${vercel.url}">${vercel.sn}'s profile</a></td> 
             <td>${vercel.cc}</td>
             <td>${vercel.bc}</td>
             <td>${vercel.gc}</td>
