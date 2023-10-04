@@ -28,10 +28,8 @@ fetch("vercel.json")
             out
             += `
                 <tr>
-                    <td>${vercel.sn}</td>
-                    <td>${vercel.se}</td>
+                    <td><a href="${vercel.url}">${vercel.sn}'s profile</a></td> td>${vercel.se}</td>
                     <td>${vercel.edt}</td>
-                    <td><a href="${vercel.url}">${vercel.sn}'s profile</a></td> 
                     <td>${vercel.cc}</td>
                     <td>${vercel.bc}</td>
                     <td>${q}</td>
