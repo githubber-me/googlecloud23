@@ -1,0 +1,27 @@
+.container {
+    padding: 20px;
+}
+
+#search-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#search-input,
+#search-button,
+#clear-button {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+table {
+    font-size: 16px;
+}
+
+.title-font {
+    font-size: 32px;
+}
+
+.title5-font {
+    font-size: 20px;
+}
