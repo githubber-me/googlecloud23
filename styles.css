@@ -2,6 +2,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+@media only screen and (max-width: 767px) {
+    @import url('mobile_styles.css');
+}
+
+
 .title-font {
     font-family: 'Young Serif', serif;
     font-size: 75px;
